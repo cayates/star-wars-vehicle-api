@@ -11,9 +11,15 @@
     background-color: white;
   }
   
-  .starWarsVehicles{
+  .siteHeader{
     text-align: center;
     background-color: white;
+  }
+
+  .card{
+    text-align: center;
+    background-color: white;
+    opacity: .3;
   }
 
   .submitButton {
@@ -23,5 +29,13 @@
   }
 
   .vehicleCard {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
+
+  li {
+    list-style: none;
+  }
+
+  

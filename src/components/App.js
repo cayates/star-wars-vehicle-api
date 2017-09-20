@@ -56,12 +56,12 @@ class App extends Component {
             name={vehicleSpecs.name}
             model={vehicleSpecs.model}
             manufacturer={vehicleSpecs.manufacturer}
-            vehicleClass={vehicleSpecs.vehicle_class}
+            vehicle_class={vehicleSpecs.vehicle_class}
             passengers={vehicleSpecs.passengers}
             crew={vehicleSpecs.crew}
             length={vehicleSpecs.length}
-            maxSpeed={vehicleSpecs.max_atmosphering_speed}
-            cargoCapacity={vehicleSpecs.cargo_capacity}
+            max_atmosphering_speed={vehicleSpecs.max_atmosphering_speed}
+            cargo_capacity={vehicleSpecs.cargo_capacity}
           />
           )
           })}
