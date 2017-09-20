@@ -1,0 +1,17 @@
+.App {
+    margin: 10px;
+  }
+  
+  .card{
+    margin: 5px;
+  }
+  
+  .pilotSection{
+    text-align: center;
+    background-color: white;
+  }
+  
+  .starWarsVehicles{
+    text-align: center;
+    background-color: white;
+  }
