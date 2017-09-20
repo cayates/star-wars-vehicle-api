@@ -4,6 +4,7 @@ import '../styles/App.css';
 
 import Header from './Header';
 import Pilot from './Pilot';
+import Vehicles from './Vehicles'
 import {getVehicles} from '../services'
 
 class App extends Component {
@@ -35,20 +36,8 @@ class App extends Component {
     this.populateVehicles()
   }
 
-
-  // RENDER
-  // Before you can map over the data you've fetched, you will first need to store that 'state' in a variable.
-  // Map over the data.
-  // Don't forget to set the 'key'. In this case, use the vehicle name.
-  // You will need the following values: name, model, manufacturer, class, passengers, crew, length, max speed, and cargo capacity.
-  // Rendering: create a 'card' for each of the vehicles. consult the Bootstrap 4 docs for details.
-  // Enter your code below:
-
   render() {
-    /*
-    Store vehicles state in a variable.
-    Map over this variable to access the values needed to render.
-    */
+
     return (
       <div className="App">
         {
@@ -59,6 +48,24 @@ class App extends Component {
           pilot={this.state.pilot}
           nameChange={this._handleNameChange}
         />
+        <div className = "vehicleCard">
+        {this.state.vehicles.map((vehicleSpecs) => {        
+          return(
+          <Vehicles
+            key={vehicleSpecs.name}
+            name={vehicleSpecs.name}
+            model={vehicleSpecs.model}
+            manufacturer={vehicleSpecs.manufacturer}
+            vehicleClass={vehicleSpecs.vehicle_class}
+            passengers={vehicleSpecs.passengers}
+            crew={vehicleSpecs.crew}
+            length={vehicleSpecs.length}
+            maxSpeed={vehicleSpecs.max_atmosphering_speed}
+            cargoCapacity={vehicleSpecs.cargo_capacity}
+          />
+          )
+          })}
+        </div>
       </div>
     );
   }

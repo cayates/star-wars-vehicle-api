@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 
 export default class Pilot extends Component {
@@ -25,8 +24,9 @@ _handleChange = (event) => {
     <div className = "pilotSection">
         <h1>What is your name, Pilot?</h1>
         <form className = "pilotSearchBar" onSubmit={this._handleSubmit}>
-            <input type="text" name="pilot" onChange={this._handleChange} placeholder="Enter your name" />
-            <input type="submit" value="Submit" />
+            <input className = "searchBar" type="text" name="pilot" onChange={this._handleChange} placeholder="Enter your name" />
+            <br />
+            <input className = "submitButton" type="submit" value="Submit" />
             <h3>{this.props.pilot}</h3>
         </form>
     </div>       
