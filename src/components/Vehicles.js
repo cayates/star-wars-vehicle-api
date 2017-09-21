@@ -8,7 +8,6 @@ export default class Vehicles extends Component {
             <h4>Model: {this.props.model}</h4>
             <h3>Specs</h3>
                 <p>Manufacturer: {this.props.manufacturer}</p>
-                <hr />
                 <p>Vehicle Class: {this.props.vehicle_class}</p>
                 <p>Passengers: {this.props.passengers}</p>
                 <p>Crew: {this.props.crew}</p>
