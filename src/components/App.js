@@ -48,7 +48,8 @@ class App extends Component {
           pilot={this.state.pilot}
           nameChange={this._handleNameChange}
         />
-        <div className = "vehicleCard">
+        <div className = "container">
+        <div className = "row justify-content-md-center">
         {this.state.vehicles.map((vehicleSpecs) => {        
           return(
           <Vehicles
@@ -65,6 +66,7 @@ class App extends Component {
           />
           )
           })}
+          </div>
         </div>
       </div>
     );

@@ -24,6 +24,7 @@
     text-align: center;
     background-color: white;
     opacity: .6;
+    margin: 5px 25px 5px 25px;
   }
 
   .submitButton {
@@ -32,18 +33,20 @@
     margin: 10px;
   }
 
-  .vehicleCard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  p {
+    color: black;
+    font-weight: bold;
   }
 
-  li {
-    list-style: none;
+  h4 {
+    color: grey;
   }
 
-  h3 {
-
+  .container {
+    width: 100%;
   }
+
+
+
 
   
